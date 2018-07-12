@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   
   
-  <title>  Kanzaki&#39;s Blog </title>
+  <title>  Hexo的备份、迁移 |   Kanzaki&#39;s Blog </title>
 
  
   
@@ -66,62 +66,38 @@
             <section class="main">  
           
 
-          
+          <article class="post">
+  
+	<div class="post-header">
 
+	<p class="post-title">	
+		hexo的备份、迁移
+	</p>
+			
 
+	<div class="meta-info">	
+	<span>
+		7月 12, 2018
+	</span>
 
-
-<div class="profile sildeUpMin">
 	
-		<a href="/">
-			<img class="avatar" src="/images/header.jpg">
-		</a>
-		<p class="author">Kanzaki</p>
-		
-		<div class="social">
-   		      		
-			<a target="_blank" class="social-links" href="https://kanzaki-h.github.io/">		
-				<i class="iconfont icon-Github"></i>
-			</a>	
-	          		
-			<a target="_blank" class="social-links" href="https://weibo.com/5514633942/profile">		
-				<i class="iconfont icon-Weibo"></i>
-			</a>	
-	    
-    	</div>		
+	
+		<i class="iconfont icon-words"></i>
+		<span>
+			727
+		</span>
+	
 </div>
 
+</div> 
+	 
 
-    	  	
-  		
-    			
+	  <div class="post-content slideDownMin">
 
-<article class="article">		
-	   
-	<div class="article-header">
-	    
-		<a class="article-title" href="/2018/07/12/hexo的备份、迁移/">hexo的备份、迁移</a>  
-	       
-		 
+		
 
-		<div class="article-meta">
-			7月 12, 2018
 			
-				<span class="iconfont icon-star"></span>
-				            
-						<a class="article-tag" href="/tags/hexo/">hexo</a>           
-				
-			
-		</div>
-	</div>
-
-
-	
-
-    
-	<div class="article-excerpt">	
-		 
-			<p>之前做过在另一台电脑中得hexo忘记备份，更换电脑后迁移比较麻烦，官网记录的备份是从hexo备份到其他博客的方案，所以在这里记录一下hexo备份迁移流程。</p>
+					<p>之前做过在另一台电脑中得hexo忘记备份，更换电脑后迁移比较麻烦，官网记录的备份是从hexo备份到其他博客的方案，所以在这里记录一下hexo备份迁移流程。</p>
 <h3 id="具体的操作如下"><a href="#具体的操作如下" class="headerlink" title="具体的操作如下"></a>具体的操作如下</h3><p>选择一个目录，克隆gitHub上面生成的静态文件到本地<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/yourname/hexo-test.github.io.git</span><br></pre></td></tr></table></figure></p>
 <p>删除本地文件夹中的<strong>除了</strong>有关git的所有文件,复制写博客的hexo目录（所有文件）到当前路径，忽略不必要提交的文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch .gitignore</span><br></pre></td></tr></table></figure></p>
 <p>在生成”.gitignore” 文件里输入你要忽略的文件夹及其文件就可以了。（注意格式）</p>
@@ -134,62 +110,126 @@
 <p>克隆分支的操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b hexo https://github.com/yourname/hexo-test.github.io.git</span><br></pre></td></tr></table></figure></p>
 <p>这样做完了以后，每次写完博客发布之后不要忘了还要git push把源文件推到分支上</p>
 <p>参考文章：<a href="https://www.jianshu.com/p/4e068f4dd726" target="_blank" rel="noopener">https://www.jianshu.com/p/4e068f4dd726</a></p>
+  	
+					
+	  </div>     
+	  
 
-		  	  
+	
+<div class="post-meta">
+      	
+
+      
+        <i class="iconfont icon-tag"></i>     
+          <a class="tag-link" href="/tags/hexo/">hexo</a>    
+      	
+</div>
+
+
+
+
+
+<div class="post-footer">
+  <div class="pf-left">
+      <img class="pf-avatar" src="/images/header.jpg">
+      <p class="pf-des">hi,i am kanzaki</p>
+  </div>
+
+  <div class="pf-right">           
+      <div class="pf-links">
+        
+
+
+
+
+<span class="donate-btn">
+	<span class="iconfont icon-donate"></span>
+</span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="noLazyLoad donate-img" src="/images/donate1.png" alt="No Donate Image!">	
+		<img id="donate-qr-alipay" class="noLazyLoad donate-img" src="/images/donate2.png" alt="No Donate Image!">	
 	</div>
 
-	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/07/12/hexo的备份、迁移/">阅读更多</a> 	
+	<span class="donate-word">世界美好 你也是</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
+
+ 
+        
+	
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		   			             
+            <a class="iconfont  icon-share-qq -mob-share-qq"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weibo -mob-share-weibo"></a>		
+     	   			             
+            <a class="iconfont  icon-share-douban -mob-share-douban"></a>		
+     	   			             
+            <a class="iconfont  icon-share-facebook -mob-share-facebook"></a>		
+     	   			             
+            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
+     	   			             
+            <a class="iconfont  icon-share-google -mob-share-google"></a>		
+     	   
 	</div>	
+
+      </div>  
+    <nav class="pf-paginator">
+           
+        
+      
+        
+        <a href="/2018/07/11/hello-world/" data-hover="Hello World"> 下一篇</a>
+            
+  </nav>   
+  </div>
+</div> 
+	
+
+
     
-</article>     
-     	
-    	  	
-  		
-    			
+    <div id="disqus_thread"></div>
 
-<article class="article">		
-	   
-	<div class="article-header">
-	    
-		<a class="article-title" href="/2018/07/11/hello-world/">Hello World</a>  
-	       
-		 
+    <script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://'+'kanzaki'+'.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());    
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
 
-		<div class="article-meta">
-			7月 11, 2018
-			
-		</div>
-	</div>
+    <noscript>Please enable JavaScript to view the  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
 
 
 	
+</article>
 
-    
-	<div class="article-excerpt">	
-		 
-			<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-		  	  
+	<div class="sidebar">
+		<h4 class="toc-title">目录</h4>
+		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#具体的操作如下"><span class="toc-text">具体的操作如下</span></a></li></ol>
 	</div>
-
-	<div class="article-bottom">
-		<a class="article-readmore" href="/2018/07/11/hello-world/">阅读更多</a> 	
-	</div>	
-    
-</article>     
-     	
-
-
-
 
           </section> 
       </div>            
